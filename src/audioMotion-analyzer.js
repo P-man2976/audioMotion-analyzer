@@ -2534,7 +2534,7 @@ export default class AudioMotionAnalyzer {
 					// if hold is negative, it becomes the "acceleration" for peak drop
 					if (bar.hold[channel] < 0)
 						bar.peak[channel] +=
-							peakFallSpeed ?? bar.hold[channel] / ((holdFrames * holdFrames) / 2);
+							-peakFallSpeed ?? bar.hold[channel] / ((holdFrames * holdFrames) / 2);
 				}
 
 				// check if it's a new peak for this bar
