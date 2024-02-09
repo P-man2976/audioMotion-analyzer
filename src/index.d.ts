@@ -29,6 +29,7 @@ export interface Options {
   gradientLeft?: string;
   gradientRight?: string;
   height?: number;
+  holdFrames?: number;
   ledBars?: boolean;
   linearAmplitude?: boolean;
   linearBoost?: number;
@@ -48,6 +49,7 @@ export interface Options {
   outlineBars?: boolean;
   overlay?: boolean;
   peakLine?: boolean;
+  peakFallSpeed?: number;
   radial?: boolean;
   radialInvert?: boolean;
   radius?: number;
